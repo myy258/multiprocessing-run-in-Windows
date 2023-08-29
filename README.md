@@ -7,7 +7,7 @@
 
 
 ## 代码部分
-#### 代码1
+#### Code 1
 
 - 1.这里使用了13个进程来运行函数multiprocess_cml，该函数会处理数据并最终返回一个dataframe
 - 2."new_base[start_idx:end_idx]"类似于一个分页，例如100条数据，第一个进程拿第0至10条，第二个进程拿第11至20去run...如此类推。
@@ -39,7 +39,7 @@ def multi_p(self,new_base, df_output):
       return yconcat
 ```
 
-#### 代码2
+#### Code 2
 - 在Windows下使用multiprocessing必须在if __name__ == '__main__':之下，注意是必须！当然，如果你的multiprocessing只是用在子函数或者子子子函数中，则需要确保主函数在if __name__ == '__main__':之下就行。
 
 ```python
