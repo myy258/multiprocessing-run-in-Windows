@@ -51,7 +51,7 @@ if __name__ == '__main__':
 还有一点就是我们不再直接在任何IDE中直接运行代码（目前我认知中是不能的，如果能，恕我孤陋寡闻），会报错。必须在命令窗口使用命令运行（python main.py）
 先键盘Win+R ----> cd至脚本文件目录下 ------> python main.py 完成
 
-相当鸡肋啊~~debug难度大大增加
+相当鸡肋啊~~debug难度大大增加,还是在Linux环境下用的舒服
 
 ![image](https://github.com/myy258/multiprocessing-run-in-Windows/blob/main/Screenshot%202023-08-29%20163606.png) 
 
