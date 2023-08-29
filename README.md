@@ -51,8 +51,7 @@ if __name__ == '__main__':
 先键盘Win+R ----> cd至脚本文件目录下 ------> python main.py 完成
 相当鸡肋啊~~debug难度大大增加
 
-![image](https://github.com/myy258/multiprocessing-run-in-Windows/blob/main/Screenshot%202023-08-29%20163606.png）
-
+![image](https://github.com/myy258/multiprocessing-run-in-Windows/blob/main/Screenshot%202023-08-29%20163606.png) 
 
 
 ### 声明
