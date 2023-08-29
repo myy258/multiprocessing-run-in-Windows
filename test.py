@@ -2,11 +2,11 @@ def multiprocess_cml(self, chunk, process, new_base, df_output):
         # use cml to get the result then replace the original result
         for i in [x.split('-') for x in chunk['CASE'].values]:
             ab = new_base.loc[new_base['CASE'] == '-'.join(i)] 
-            GenerateCase().reverse_to_raw_cases(ab.iloc[:,1:], self.base_case, ab.iloc[:,1:-len(df_output.columns[1:])].columns.tolist(), f'C:/Users/M172504/Desktop/2/data/{process}/data', '-'.join(i))
+            GenerateCase().reverse_to_raw_cases(ab.iloc[:,1:], self.base_case, ab.iloc[:,1:-len(df_output.columns[1:])].columns.tolist(), f'C:/Users/M/Desktop/2/data/{process}/data', '-'.join(i))
         
-        y = main_cml(f'C:/Users/M172504/Desktop/2/data/{process}')
+        y = main_cml(f'C:/Users/M/Desktop/2/data/{process}')
         
-        dat_files = glob.glob(f'C:/Users/M172504/Desktop/2/data/{process}/data/*.dat')
+        dat_files = glob.glob(f'C:/Users/M/Desktop/2/data/{process}/data/*.dat')
         for r in dat_files:
             os.remove(r)
         
