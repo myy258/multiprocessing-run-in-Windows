@@ -1,17 +1,17 @@
 ## 背景
-想在Windows系统里使用python的multiprocessing真可谓一波三折，小坑多多，不过最终还是能实现。尽量能在Linux环境下使用，毕竟不用费心。
+想在Windows系统里使用python的multiprocessing真可谓一波三折，小坑多多，不过最终还是能实现。尽量能在Linux环境下使用，毕竟不用那么费心。
 
 
 ## 任务
-本次任务为了在Windows环境下使用python的multiprocessing，以提升效率。任务要求是通过多进程（这里使用了13个进程）来获取某函数的数据处理结果，也就是函数会return一组数据，最后将所有return的数据combine.
+本次任务为了在Windows环境下使用python的multiprocessing，以提升效率。任务要求是通过多进程（这里使用了13个进程,使用多少进程视乎CPU核数和PC使用情况来定，推荐与CPU核数1:1）来获取某函数的数据处理结果，也就是函数会return一组数据，最后将所有return的数据combine.
 
 
 ## 代码部分
 #### Code 1
 
-- 1.这里使用了13个进程来运行函数multiprocess_cml，该函数会处理数据并最终返回一个dataframe
-- 2."new_base[start_idx:end_idx]"类似于一个分页，例如100条数据，第一个进程拿第0至10条，第二个进程拿第11至20去run...如此类推。
-- 3.以下代码可以稍作修改直接食用。
+- 这里使用了13个进程来运行函数multiprocess_cml，该函数会处理数据并最终返回一个dataframe
+- "new_base[start_idx:end_idx]"类似于一个分页，例如100条数据，第一个进程拿第0至10条，第二个进程拿第11至20去run...如此类推。
+- 以下代码可以稍作修改直接食用。
 
 ```python
 def multi_p(self,new_base, df_output):
@@ -48,8 +48,8 @@ if __name__ == '__main__':
 ```
 
 ## 最后操作
-还有一点就是我们不再直接在任何IDE中直接运行代码（目前我认知中是不能的，如果能，恕我孤陋寡闻），会报错。必须在命令窗口使用命令运行（python main.py）
-先键盘Win+R ----> cd至脚本文件目录下 ------> python main.py 完成
+还有一点就是不能直接在任何IDE中直接运行代码（目前我认知中是不能的，如果能，恕我孤陋寡闻），会报错。必须在命令窗口使用命令运行（python main.py）
+先键盘Win+R ----> cd至脚本文件目录下 -----> python main.py -----> enter 完成
 
 相当鸡肋啊~~debug难度大大增加,还是在Linux环境下用的舒服
 
