@@ -1,3 +1,5 @@
+## <img src="https://img.shields.io/badge/Python-3.9.7-blue?logo=Python&style=plastic"> <img src="https://img.shields.io/badge/Tensorflow-2.5.0-red?logo=Tensorflow&style=plastic">
+
 ## 背景
 想在Windows系统里使用python的multiprocessing真可谓一波三折，小坑多多，不过最终还是能实现。尽量能在Linux环境下使用，毕竟不用那么费心。
 
